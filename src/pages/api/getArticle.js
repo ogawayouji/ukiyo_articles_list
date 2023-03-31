@@ -1,10 +1,8 @@
 export const getArticle = () => {
-  const endpoint = "https://ukiyo-test-blog.microcms.io" + "/api/v1/articles"
-  // const endpoint = process.env.MICROCMS_URL + "/api/v1/articles"
+  const endpoint = process.env.NEXT_PUBLIC_MICROCMS_URL + "/api/v1/articles"
   const options = {
     headers: {
-      "X-MICROCMS-API-KEY": "1CdoKFONr4t66inzJ9GNc8kFcCmpjeRfJmdo"
-      // "X-MICROCMS-API-KEY": process.env.X_MICROCMS_API_KEY
+      "X-MICROCMS-API-KEY": process.env.NEXT_PUBLIC_X_MICROCMS_API_KEY
     },
     method: 'GET'
   }
