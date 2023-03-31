@@ -25,9 +25,9 @@ export default function Home() {
         </p>
 
         <a onClick={() => router.push('/articles')}>
-          <h1>
+          <p>
             articles
-          </h1>
+          </p>
         </a>
 
         <div className={styles.grid}>
