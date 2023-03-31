@@ -24,9 +24,9 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <button onClick={() => router.push('/articles')}>
+        <h1 onClick={() => router.push('/articles')}>
           articles
-        </button>
+        </h1>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>

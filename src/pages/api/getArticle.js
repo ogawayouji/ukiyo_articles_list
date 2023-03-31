@@ -8,8 +8,6 @@ export const getArticle = () => {
   }
 
   return new Promise((resolve, reject) => {
-    console.log(process.env)
-    console.log(endpoint)
     fetch(endpoint, options)
       .then((res) => res.json())
       .then((data) => resolve(data))
