@@ -1,13 +1,13 @@
 import React from 'react'
-import '../styles/Article.module.css'
+import styles from '../styles/Article.module.css'
 
 export const Article = (props) => {
   const article = props.article
 
   return (
-    <div className="article">
-      <img src={article.eyecatch.url} className="articleImage" />
-        <p className="articleTitle">
+    <div className={styles.article}>
+      <img src={article.eyecatch.url} className={styles.articleImage} />
+        <p className={styles.articleTitle}>
           {article.title}
         </p>
     </div>
